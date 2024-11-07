@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./style.css/index.css">
+  </head>
+  <body>
+
+
+    <div class="bg-black py-2 d-none d-sm-none d-md-block d-sm-block sticky-lg-top sticky-md-top">
+      <div class="ms-5 me-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="text-white fw-medium">
+            <span>Welcome you to Ecolife store!</span>
+          </div>
+          <div class="d-flex align-items-center text-white">
+            <div>
+              <ul class="list-unstyled mb-0 d-flex sign-in">
+                <a href="../../pages/sign-in/sign-in.html" class="text-white" style="text-decoration: none;">
+                  <li class="mx-4 fw-normal">Sign in</li>
+                </a>
+                |
+                <li class="mx-4 fw-normal">Compare 0</li>
+                |
+                <li class="mx-4 fw-normal">Wishlist 0</li>
+                |
+              </ul>
+            </div>
+            <div class="ml-3 select-items mx-4">
+              <select class="text-white bg-black" style="border: none;">
+                <option class="fw-normal">$ USD</option>
+                <option class="fw-normal">EUR €</option>
+                <option class="fw-normal">USD $</option>
+              </select>
+              |
+              <select class="select-items ml-2 text-white bg-black" style="border: none;">
+                <option class="fw-normal">English</option>
+                <option class="fw-normal">English</option>
+                <option class="fw-normal">Français</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <!-- navbar header -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-white bg-white sticky-top">
+    <div class="container-fluid align-content-center ">
+      <a class="navbar-brand ms-5 mb-4" href="../../index.html">
+        <img src="../../images/logo-1638512648.jpg" alt="logo" class="img-fluid">
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item-1">
+            <a class="nav-link active me-3" aria-current="page" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a target="_blank" class="nav-link dropdown-toggle" href="" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Features
+        </a>
+        <ul class="dropdown-menu">
+            <div class="d-flex justify-content-between feature-section">
+                    <div>
+                        <h5 class="fw-bold"><a class="dropdown-item fw-bold" href="#">Filters
+                            </a></h5>
+                        <li><a class="dropdown-item fw-normal" href="../../pages/f-sidebar/sidebar.html">Filter Sidebar</a></li>
+
+                       
+                    </div>
+                </div>
+            </ul>
+        </li>
+          <div class="d-flex"> 
+            <li class="nav-item dropdown">
+              <a target="_blank" class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Fresh Food
+          </a>
+              <ul class="dropdown-menu">
+                  <div class="d-flex justify-content-between dropdown-section">
+                      <div class="fresh-food">
+                          <img class="img-fluid pt-2 ps-2" src="../../images/fruit-img-1.jpg" alt="img">
+                          <h6 class="pt-3 fw-bold"><a class="dropdown-item fw-bold" href="../../pages/frozen food vegetables/frozen food.html">Fresh Vegetable</a></h6>
+                          <li><a class="dropdown-item fw-normal" href="../../pages/salad greens/salad.html">Salad Greens</a></li>
+                      
+                      </div>
+                      <div class="ps-4 fresh-food">
+                          <img class="img-fluid pt-2" src="../../images/fruit-img-4.jpg" alt="">
+                          <h5 class="pt-3 fw-bold"><a class="dropdown-item fw-bold" href="#">Fresh Fruit</a></h5>
+                          <li><a class="dropdown-item fw-normal" href="../../pages/apples & pears/apples.html">Apples & Pears</a></li>
+  
+                      </div>
+                      <!-- <div class="ps-4 fresh-food-2">
+                          <img class="img-fluid pt-2" src="../../images/fruit-img-3.jpg" alt="">
+                          <strong class="pt-3"><a class="dropdown-item fw-bold" href="#">Dry Fruit & Snacks</a></strong>
+                          <li><a class="dropdown-item fw-normal" href="../../pages/dried fruits/dried fruits.html">Dried Fruit</a></li>
+  
+                      </div> -->
+                     
+                    </ul>
+                   </li>
+                   </div>
+                   <li class="nav-item dropdown">
+                    <a target="_blank" class="nav-link dropdown-toggle" href="" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Frozen Food
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <div class="d-flex align-items-center frozen-section">
+                                    <li class="pt-2"><a class="dropdown-item fw-medium" href="../../pages/frozen food vegetables/frozen food.html">Frozen Fruit Vegetables &
+                                        Herbs</a></li>
+                                    <span class="pt-3 pe-4"><iconify-icon icon="oui:arrow-right"></iconify-icon>
+                                    </span>
+                                </div>
+                                <hr class="p-0 m-0">
+                                
+                                <hr class="p-0 m-0">
+                                <div class="d-flex align-items-center">
+                                    <li class="pt-2"><a class="dropdown-item fw-normal" href="../../pages/frozen fish/frozen fish.html">Frozen Fish & Seafood</a>
+                                    </li>
+                                    <span class="pt-3 pe-4"><iconify-icon icon="oui:arrow-right"></iconify-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/products/product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/contact/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="search-container">
+          <div class="search-input-wrapper rounded-5">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-icon-1 text-white w-25">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001a1.007 1.007 0 0 0-.071.072l3.85 3.85a1 1 0 0 0 1.414-1.414l-3.85-3.85a1.007 1.007 0 0 0-.072-.071zm-5.262 1.401a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class=" d-flex align-items-center me-2 ms-2"> 
+          <div>  
+          <img class="img-fluid me-1" src="../../images/icon_contact.png" alt="icon">
+        </div>
+        <div>  
+        <p class="fw-medium fs-5">Call us:<br><b>+800345678</b></p>
+         </div>
+        </div>
+
+        <div class=" d-flex">
+          <div> 
+          <span><iconify-icon class="" icon="akar-icons:shopping-bag" width="30px"></iconify-icon> </span>
+        </div>
+        <div class="ms-2 mt-1">
+          <b class="">$0.000</b>
+        </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    
+    <div class="bg-contact mt-4">
+      <div class="heading text-center align-content-center pt-5"> 
+      <h2 class="fw-bold fs-4">Contact us</h2>
+     <p class="ms-3 fw-normal fs-5">Home /<span class="contact fw-normal fs-5">Contact us</span></p>
+    </div>
+    </div>
+
+
+
+
+    <div class="container google-map mt-5">
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56613.73795640849!2d68.70571129674342!3d27.52031555030931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3935da5e71caa8b9%3A0x3a9ffdf3598dfbfd!2sKhairpur%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1718875391765!5m2!1sen!2s" height="400px" width="800px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+  
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-lg-6 mb-4">
+              <h2>Store information</h2>
+              <div class="d-flex align-items-start mt-3">
+                  <div class="me-3">
+                      <iconify-icon class="search-icon" width="22px" icon="fa6-solid:map-location"></iconify-icon>
+                  </div>
+                  <div>
+                      <p>Ecolife Responsive Prestashop Theme <br> United States</p>
+                  </div>
+              </div>
+  
+              <div class="d-flex align-items-start mt-3">
+                  <div class="me-3">
+                      <iconify-icon class="search-icon" width="22px" icon="ic:baseline-call"></iconify-icon>
+                  </div>
+                  <div>
+                      <p>Call us: +800345678</p>
+                  </div>
+              </div>
+  
+              <div class="d-flex align-items-start mt-3">
+                  <div class="me-3">
+                      <iconify-icon class="search-icon" width="22px" icon="wpf:message"></iconify-icon>
+                  </div>
+                  <div>
+                      <p>Email us: demo@posthemes.com</p>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-lg-6">
+              <div>
+                  <b>Contact us</b>
+                  <ul class="list-unstyled mt-4">
+                      <li class="mb-4">Subject</li>
+                      <li class="mb-4">Email address</li>
+                      <li class="mb-4">Attachment</li>
+                      <li class="mb-4">Message</li>
+                  </ul>
+  
+                  <div class="mb-4">
+                      <select class="form-select form-select-lg">
+                          <option>Customer Services</option>
+                          <option>Customer Services</option>
+                          <option>Webmaster</option>
+                      </select>
+                  </div>
+  
+                  <div class="mb-4"> 
+                    <label class="mb-4">Subject</label><input class="form-control form-control-lg" type="text" placeholder="your@email.com">
+                  </div>
+  
+                  <div class="mb-4">
+                      <div class="input-group">
+                          <input type="text" class="form-control form-control-lg" placeholder="Choose file...">
+                          <button class="btn btn-outline-secondary" type="button">CHOOSE FILE</button><span class="ms-2 mt-2">optional</span>
+                      </div>
+                      <!-- <small class="text-muted">Optional</small> -->
+                  </div>
+  
+                  <div class="mb-4">
+                      <textarea class="form-control form-control-lg" rows="3" placeholder="How can we help?"></textarea>
+                  </div>
+  
+                  <div class="mb-4 form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">
+                          Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt.
+                      </label>
+                  </div>
+  
+                  <div class="text-end">
+                      <button class="btn btn-primary btn-lg">Send</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+
+    
+
+  <!-- <div class="container google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56613.73795640849!2d68.70571129674342!3d27.52031555030931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3935da5e71caa8b9%3A0x3a9ffdf3598dfbfd!2sKhairpur%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1718875391765!5m2!1sen!2s" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div> -->
+
+    <!-- <div class="container">
+      <div class="d-flex justify-content-between mt-5">
+        <div class="me-4"> 
+        <h2>Store information</h2>
+        <div class="d-flex align-items-center mt-3"> 
+        <div class="mb-2"> 
+          <iconify-icon class="search-icon" width="22px"icon="fa6-solid:map-location"noobserver></iconify-icon>
+        </div>
+        <div class="ms-3"> 
+          <p>Ecolife Responsive Prestashop Theme <br> United States</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mt-3"> 
+          <div> 
+            <iconify-icon class="search-icon" width="22px"icon="ic:baseline-call"noobserver></iconify-icon>
+          </div>
+          <div class="ms-3"> 
+            <p>Call us: +800345678</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mt-3"> 
+            <div class="mb-2"> 
+              <iconify-icon class="search-icon" width="22px"icon="wpf:message"noobserver></iconify-icon>
+            </div>
+            <div class="ms-3"> 
+              <p>Email us: demo@posthemes.com</p>
+              </div>
+            </div>
+          </div>
+
+            <div class=" mt-3">
+              <b>Contact us</b>
+             <ul class="list-unstyled mt-4">
+              <li class="mb-4">Subject</li>
+              <li class="mb-4">Email address</li>
+              <li class="mb-5">Attachment</li>
+              <li class="">Message</li>
+             </ul>
+            </div>
+          
+            <div class=" select-items mt-5">
+               <select class="mb-4 py-2 w-75" >
+                <option>Customer Services</option>
+                <option>Customer Services</option>
+                <option>Webmaster</option>
+               </select>
+               <br>
+              
+               <div class="input-1 mb-4">
+                <input class="input py-1 w-75" type="text"placeholder="your@email.com">
+               </div>
+
+               <div class="message-input mb-4">
+                <div> 
+                <input class="input-2 py-1 w-75" type="text">
+                <button class="choose-btn">CHOOSE FILE</button>
+                <span class="ms-2 mt-5">optional</span>
+              </div>
+                
+               </div>
+               <div class="message-textarea">    
+               <textarea mt-3" cols="87px"rows="3px">How we can help?</textarea> 
+              </div>
+               <div class="d-flex">
+               <div class="mt-2">
+                <input type="checkbox">
+               </div>
+             <div class="ms-3 mt-2">
+              <p> Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt.</p>
+             </div>
+            </div>
+            <div class="text-end send-btn">
+              <button class="mt-3">Send</button>
+            </div>
+              
+            </div>
+        </div>
+    </div> -->
+
+
+
+     <!-- Footer Section -->
+
+
+     <div class="footer mt-5 py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="footer-content">
+                      <div class="footer-first-part">
+                          <img class="img-fluid" src="../../images/logo-1638512648.jpg" alt="hero-logo" />
+                          <p class="mt-4 fw-normal fs-6">
+                              We specialize in delivery and supply of organic food products,
+                              produced by local farmers.
+                          </p>
+                          <div class="d-flex align-items-center mt-3">
+                              <div>
+                                  <img class="img-fluid" src="../../images/contact_footer.png" alt="call-icon" />
+                              </div>
+                              <div class="contact-detail ms-2">
+                                  <span class="span">NEED HELP?</span><br />
+                                  <strong>(+800) 345 678, (+800) 123 456</strong>
+                              </div>
+                          </div>
+                          <div class="d-flex my-4">
+                              <iconify-icon width="30px" class="ms-4" icon="ri:facebook-fill" noobserver></iconify-icon>
+                              <iconify-icon width="30px" class="ms-4" icon="bi:twitter" noobserver></iconify-icon>
+                              <iconify-icon width="30px" class="ms-4" icon="bi:instagram" noobserver></iconify-icon>
+                              <iconify-icon width="30px" class="ms-4" icon="bi:youtube" noobserver></iconify-icon>
+                              <iconify-icon width="30px" class="ms-4" icon="mdi:whatsapp" noobserver></iconify-icon>
+                          </div>
+                          <div class="copy-right fw-medium">
+                              <p>Copyright © Posthemes. All Rights Reserved.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+    
+          
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="information-section">
+                      <div class="d-flex justify-content-between">
+                          <div class="information">
+                              <span class="fw-medium">Information</span>
+                              <hr class="w-50" style="border-color: #4FB68D;" />
+                              <ul class="list-unstyled ul-items fw-normal">
+                                  <li>Delivery</li>
+                                  <li>About us</li>
+                                  <li>Secure payment</li>
+                                  <li>Contact us</li>
+                                  <li>Sitemap</li>
+                                  <li>Stores</li>
+                              </ul>
+                          </div>
+    
+                          <div class="information-sec-two information mx-3">
+                              <span class="fw-medium">Custom Links</span>
+                              <hr class="w-50" style="border-color: #4FB68D;" />
+                              <ul class="list-unstyled fw-normal fs-6">
+                                  <li>Legal Notice</li>
+                                  <li>Prices drop</li>
+                                  <li>New products</li>
+                                  <li>Best sales</li>
+                                  <li>My account</li>
+                                  <li>Terms and conditions</li>
+                              </ul>
+                          </div>
+    
+                          <div class="information-sec-three ">
+                              <span class="fw-medium">Newsletter</span>
+                              <hr class="w-50" style="border-color: #4FB68D;" />
+                              <p class="fw-light mt-3">Sign up for our e-mail to get latest news.</p>
+                              <form class="footer-input">
+                                  <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address">
+                                      <button class="btn btn-light fw-medium">Subscribe</button>
+                                  </div>
+                              </form>
+                              <div class="d-flex mt-3 d-none  ">
+                                  <div class="google-btn">
+                                      <img src="./images/app_store.png" alt="btn">
+                                  </div>
+                                  <div class="google-btn mx-3">
+                                      <img src="./images/google_play.png" alt="btn">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="d-none">
+                          <img class="img-fluid w-50" src="./images/payment-logo.png" alt="logo">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>   
+
+</body>
+</html>

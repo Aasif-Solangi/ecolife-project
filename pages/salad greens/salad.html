@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salad</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./style.css/index.css" />
+</head>
+<body>
+    
+  <div class="bg-black py-2 d-none d-sm-none d-md-block d-sm-block sticky-lg-top sticky-md-top">
+    <div class="ms-5 me-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="text-white fw-medium">
+          <span>Welcome you to Ecolife store!</span>
+        </div>
+        <div class="d-flex align-items-center text-white">
+          <div>
+            <ul class="list-unstyled mb-0 d-flex sign-in">
+              <a href="../../pages/sign-in/sign-in.html" class="text-white" style="text-decoration: none;">
+                <li class="mx-4 fw-normal">Sign in</li>
+              </a>
+              |
+              <li class="mx-4 fw-normal">Compare 0</li>
+              |
+              <li class="mx-4 fw-normal">Wishlist 0</li>
+              |
+            </ul>
+          </div>
+          <div class="ml-3 select-items mx-4">
+            <select class="text-white bg-black" style="border: none;">
+              <option class="fw-normal">$ USD</option>
+              <option class="fw-normal">EUR €</option>
+              <option class="fw-normal">USD $</option>
+            </select>
+            |
+            <select class="select-items ml-2 text-white bg-black" style="border: none;">
+              <option class="fw-normal">English</option>
+              <option class="fw-normal">English</option>
+              <option class="fw-normal">Français</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+      <!-- navbar -->
+
+
+      <nav class="navbar navbar-expand-lg navbar-white bg-white sticky-top">
+        <div class="container-fluid align-content-center ">
+          <a class="navbar-brand ms-5 mb-4" href="../../index.html">
+            <img src="../../images/logo-1638512648.jpg" alt="logo" class="img-fluid">
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item-1">
+                <a class="nav-link active me-3" aria-current="page" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a target="_blank" class="nav-link dropdown-toggle" href="" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+            </a>
+            <ul class="dropdown-menu">
+                <div class="d-flex justify-content-between feature-section">
+                        <div>
+                            <h5 class="fw-bold"><a class="dropdown-item fw-bold" href="#">Filters
+                                </a></h5>
+                            <li><a class="dropdown-item fw-normal" href="../../pages/f-sidebar/sidebar.html">Filter Sidebar</a></li>
+                            
+                           
+                        </div>
+                    </div>
+                </ul>
+            </li>
+              <div class="d-flex"> 
+                <li class="nav-item dropdown">
+                  <a target="_blank" class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Fresh Food
+              </a>
+                  <ul class="dropdown-menu">
+                      <div class="d-flex justify-content-between dropdown-section">
+                          <div class="fresh-food">
+                              <img class="img-fluid pt-2 ps-2" src="../../images/fruit-img-1.jpg" alt="img">
+                              <h6 class="pt-3 fw-bold"><a class="dropdown-item fw-bold" href="../../pages/frozen food vegetables/frozen food.html">Fresh Vegetable</a></h6>
+                              <li><a class="dropdown-item fw-normal" href="../../pages/salad greens/salad.html">Salad Greens</a></li>
+                          
+                          </div>
+                          <div class="ps-4 fresh-food">
+                              <img class="img-fluid pt-2" src="../../images/fruit-img-4.jpg" alt="">
+                              <h5 class="pt-3 fw-bold"><a class="dropdown-item fw-bold" href="#">Fresh Fruit</a></h5>
+                              <li><a class="dropdown-item fw-normal" href="../../pages/apples & pears/apples.html">Apples & Pears</a></li>
+      
+                          </div>
+                          <!-- <div class="ps-4 fresh-food-2">
+                              <img class="img-fluid pt-2" src="../../images/fruit-img-3.jpg" alt="">
+                              <strong class="pt-3"><a class="dropdown-item fw-bold" href="#">Dry Fruit & Snacks</a></strong>
+                              <li><a class="dropdown-item fw-normal" href="../../pages/dried fruits/dried fruits.html">Dried Fruit</a></li>
+      
+                          </div> -->
+                         
+                        </ul>
+                       </li>
+                       </div>
+                       <li class="nav-item dropdown">
+                        <a target="_blank" class="nav-link dropdown-toggle" href="" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Frozen Food
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="d-flex align-items-center frozen-section">
+                                        <li class="pt-2"><a class="dropdown-item fw-medium" href="../../pages/frozen food vegetables/frozen food.html">Frozen Fruit Vegetables &
+                                            Herbs</a></li>
+                                        <span class="pt-3 pe-4"><iconify-icon icon="oui:arrow-right"></iconify-icon>
+                                        </span>
+                                    </div>
+                                    <hr class="p-0 m-0">
+                                    
+                                    <hr class="p-0 m-0">
+                                    <div class="d-flex align-items-center">
+                                        <li class="pt-2"><a class="dropdown-item fw-normal" href="../../pages/frozen fish/frozen fish.html">Frozen Fish & Seafood</a>
+                                        </li>
+                                        <span class="pt-3 pe-4"><iconify-icon icon="oui:arrow-right"></iconify-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/products/product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/contact/contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="search-container">
+              <div class="search-input-wrapper rounded-5">
+                <input type="text" class="search-input" placeholder="Search...">
+                <div class="search-icon text-white w-25">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001a1.007 1.007 0 0 0-.071.072l3.85 3.85a1 1 0 0 0 1.414-1.414l-3.85-3.85a1.007 1.007 0 0 0-.072-.071zm-5.262 1.401a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            
+            <div class=" d-flex align-items-center me-2 ms-2"> 
+              <div>  
+              <img class="img-fluid me-1" src="../../images/icon_contact.png" alt="icon">
+            </div>
+            <div>  
+            <p class="fw-medium fs-5">Call us:<br><b>+800345678</b></p>
+             </div>
+            </div>
+  
+            <div class=" d-flex">
+              <div> 
+              <span><iconify-icon class="" icon="akar-icons:shopping-bag" width="30px"></iconify-icon> </span>
+            </div>
+            <div class="ms-2 mt-1">
+              <b class="">$0.000</b>
+            </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+   
+
+
+
+
+  <div class="frozen-bg mt-4">
+    <div class="text-center align-items-center pt-5 banana-heading">
+      <h1 class="fw-bold fs-4">Salad Greens</h1>
+      <p class="fw-normal fs-5">Home /  Fresh Food / Fresh Vegetables <span class="fw-normal fs-5">Salad Greens</span></p>
+    </div>
+  </div>
+
+
+
+    <div class="container mt-5 mb-4"> 
+       <div class="d-flex justify-content-between">
+        <div class="filter ms-3">
+            <h3 class="fw-bold fs-4">Filter By</h3>
+        </div>
+        
+        <div class="products">
+            <iconify-icon class="me-3" icon="bi:grid"></iconify-icon> <iconify-icon class="me-4" icon="cil:list"></iconify-icon>
+            <span class="fw-medium fs-5">There are 17 products.</span>
+        </div>
+            <div class="d-flex select"> 
+              <div class="me-3"> 
+            <p class="sort fw-medium fs-5">Sort by:</span>
+            </div>
+            <div> 
+              <select class="fw-medium fs-5">
+                <option>Relevance</option>
+                <option>Best seller</option>
+                <option>Relevance</option>
+                <option>Name, A to Z</option>
+                <option>Name, Z to A</option>
+                <option>Price, low to high</option>
+                <option>Price, high to low</option>
+            </select>
+          </div>
+        </div>
+        </div>
+       </div>
+
+
+       <!-- first card section -->
+
+       <div class="container"> 
+        <div class="row">
+            <div class="d-flex fruit-cards">     
+            <div class="col-md-3 col-xs-12 ps-4 ">
+                <div class="mt-4">
+                <h5 class="fw-bold fs-4">Price</h5>
+                <span class="fw-normal fs-5">$0.00 - $9.00</span>
+                <hr class="w-50" style="color: #4FB68D;">
+                </div>
+                <h5 class="fw-bold fs-4">Brand</h5>
+                <div class="check-box-items pt-3">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> Frozen Fruit (17)</span>
+                </div>
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> Frozen Herbal (17)</span>
+                </div>
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> Frozen Smoothie Mix (17)</span>
+                </div>
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> Frozen vegetables (17)</span>
+                </div> 
+ 
+            </div>
+            
+            <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/fruit-dried-mango-slices.jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 2</p>
+                  <b class="mx-1">Fruit Dried Mango Slices</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3"><s>$3.90</s> <b>$3.51</b> -10%</span>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/large-mango-single.jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 2</p>
+                  <b class="mx-2">Large Mango Single</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3">$10. 00</span>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/fresh-orange-nagpur.jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 3</p>
+                  <b class="mx-1">Fresh Orange Nagpur</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3">$29.00</span>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12 fruit-card-1">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/organic-banana-chips.jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 4</p>
+                  <b class="mx-2">Organic Banana Chips</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3">$6.00</span>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    </div>
+     
+     <!-- second card section -->
+
+            <div class="container mt-4"> 
+                <div class="row">
+                    <div class="d-flex">     
+                    <div class="col-md-3 col-xs-12 ps-4 ">
+                        <div class="">
+                        <h5 class="fw-bold fs-4">Tags</h5>
+                        <hr class="w-50" style="color: #4FB68D;">
+                        </div>
+                        <div class="check-box-items pt-3">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> Frozen Fruit (17)</span>
+                        </div>
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> Manufacturer 1 (2)</span>
+                        </div>
+        
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> Manufacturer 2 (5)</span>
+                        </div>
+        
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> Manufacturer 3 (3)</span>
+                        </div>
+        
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> Manufacturer 4 (3)</span>
+                        </div>
+        
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> Manufacturer 5 (4)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                        <div class="card-2 py-3 border">
+                          <span class="new-product ms-2">New Product</span><br />
+                          <img
+                            class="img-fluid"
+                            width="120px"
+                            src="../../images/kiwi-fruit-single (1).jpg"alt="img"/>
+                          <p class="mx-3 ">MANUFACTURER 5</p>
+                          <b class="mx-2">Kiwi Fruit Single</b> <br>
+                          <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                          <span class=" ms-3"><s>$20.90</s> <b>$18.00</b> -10%</span>
+                        </div>
+                      </div>
+        
+                      <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                        <div class="card-2 py-3 border">
+                          <span class="new-product ms-2">New Product</span><br />
+                          <img
+                            class="img-fluid"
+                            width="120px"
+                            src="../../images/utella-hazelnut-spread.jpg"alt="img"/>
+                          <p class="mx-3 ">MANUFACTURER 2</p>
+                          <b class="mx-1">Utella Hazelnut Spread</b> <br>
+                          <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                          <span class=" ms-3">$11. 90</span>
+                        </div>
+                      </div>
+        
+                      <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                        <div class="card-2 py-3 border">
+                          <span class="new-product ms-2">New Product</span><br />
+                          <img
+                            class="img-fluid"
+                            width="120px"
+                            src="../../images/pip-nut-peanut-butter.jpg"alt="img"/>
+                          <p class="mx-3 ">MANUFACTURER 3</p>
+                          <b class="mx-1">Solimo Premium raisins</b> <br>
+                          <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                          <span class=" ms-3">$7.00</span>
+                        </div>
+                      </div>
+        
+                      <div class="col-md-2 col-xs-12 fruit-card-1">
+                        <div class="card-2 py-3 border">
+                          <span class="new-product ms-2">New Product</span><br />
+                          <img
+                            class="img-fluid"
+                            width="120px"
+                            src="../../images/tomato-riesentraube.jpg"alt="img"/>
+                          <p class="mx-3 ">MANUFACTURER 1</p>
+                          <b class="mx-2">Tomato Riesentraube</b> <br>
+                          <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                          <span class=" ms-3"><s>$55.00</s> <b>$04.75</b> -5%</span>
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+            </div>
+
+             <!-- third card section -->
+
+            <div class="container mt-5"> 
+                <div class="row mt-5">
+                    <div class="d-flex frozen-fruit-cards">     
+                    <div class="col-md-3 col-xs-12 ps-4  ">
+                        <div class="mt-4">
+                        <h5 class="fw-bold fs-4">Weight</h5>
+                        <hr class="w-50" style="color: #4FB68D;">
+                        </div>
+                        <div class="pt-3">
+                            <input type="checkbox">
+                            <span class="check-box-items ps-2 fw-normal fs-5"> 100g (7)</span>
+                        </div>
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> 300g (10)</span>
+                        </div>
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> 500g (11)</span>
+                        </div>
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> 1kg (9)</span>
+                        </div>
+        
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> 2kg (3)</span>
+                        </div>
+        
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> 10 Carats (9)</span>
+                        </div>
+        
+                        <div class="check-box-items pt-2">
+                            <input type="checkbox">
+                            <span class="ps-2 fw-normal fs-5"> 20 Carats (3)</span>
+                        </div>
+                    </div>
+                    
+        
+                    
+                    <div class="frozen-fruit-card-1 col-md-2 col-xs-12 fruit-card-1 me-5">
+                      <div class="card-2 py-3 border">
+                        <span class="new-product ms-2">New Product</span><br />
+                        <img
+                          class="img-fluid"
+                          width="120px"
+                          src="../../images/pip-nut-peanut-butter.jpg"alt="img"/>>
+                        <p class="mx-3 ">MANUFACTURER 5</p>
+                        <b class="mx-2">Pip & Nut Peanut Butter</b> <br>
+                        <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                        <span class=" ms-3">$18.90</span>
+                      </div>
+                    </div>
+
+                      <div class="frozen-fruit-card-1 col-md-2 col-xs-12 fruit-card-1 me-5">
+                        <div class="card-2 py-3 border">
+                          <span class="new-product ms-2">New Product</span><br />
+                          <img
+                            class="img-fluid"
+                            width="120px"
+                            src="../../images/fresh-cauliflower.jpg"alt="img"/>
+                          <p class="mx-3 ">MANUFACTURER 4</p>
+                          <b class="mx-2">Fresh Cauliflower</b> <br>
+                          <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                          <span class=" ms-3">$80. 50</span>
+                        </div>
+                      </div>
+        
+                      <div class="frozen-fruit-card-1 col-md-2 col-xs-12 fruit-card-1 me-5">
+                        <div class="card-2 py-3 border">
+                          <span class="new-product ms-2">New Product</span><br />
+                          <img
+                            class="img-fluid"
+                            width="120px"
+                            src="../../images/fresh-orange-nagpur.jpg"alt="img"/>
+                          <p class="mx-3 ">MANUFACTURER 3</p>
+                          <b class="mx-2">Grated Coconut</b> <br>
+                          <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                          <span class=" ms-3"><s>$18.90</s> <b>$16.07</b> -15%</span>
+                        </div>
+                      </div>
+        
+                      <div class="col-md-2 col-xs-12 fruit-card-1">
+                        <div class="card-2 py-3 border">
+                          <span class="new-product ms-2">New Product</span><br />
+                          <img
+                            class="img-fluid"
+                            width="120px"
+                            src="../../images/organic-dried-apricots (1).jpg"alt="img"/>
+                          <p class="mx-3 ">MANUFACTURER 5</p>
+                          <b class="mx-1">Organic Dried Apricots</b> <br>
+                          <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                      <span class=" ms-3">$9.00</span>
+                        </div>
+
+                      </div>
+                      
+                        </div>
+                        </div>        
+                      </div>
+            
+
+         <!-- last card section -->
+
+    <div class="container mt-2"> 
+        <div class="row">
+            <div class="d-flex">     
+            <div class="col-md-3 col-xs-12 ps-4 ">
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> 30 carats (8)</span>
+                </div>
+
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> 50 carats (6)</span>
+                </div>
+
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> 60 carats (5)</span>
+                </div>
+
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> 80 carats (1)</span>
+                </div>
+
+                <div class="check-box-items pt-2">
+                    <input type="checkbox">
+                    <span class="ps-2 fw-normal fs-5"> 100 carats (2)</span>
+                </div>
+
+                <div class="mt-2">
+                    <hr class="w-50" style="color: #4FB68D;">
+                    <p class="fw-normal fs-5">$0.00 - $9.00</p>
+                </div>
+                <div>
+                    <h5 class="fw-medium fs-4">Tags</h5>
+                    <hr class="w-50" style="color: #4FB68D;">
+                </div>
+            </div>
+            
+            <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/melon-blenheim-orange.jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 2</p>
+                  <b class="mx-1">Melon Blenheim Orange</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3">$9.00</span>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/strawberries-pack-300g.jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 4</p>
+                  <b class="mx-1">Strawberries Pack 300g</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3">$90. 00</span>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/dry-roasted-edamame (1).jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 2</p>
+                  <b class="mx-2">Dry Roasted Edamame</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3">$35.00</span>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12 fruit-card-1">
+                <div class="card-2 py-3 border">
+                  <span class="new-product ms-2">New Product</span><br />
+                  <img
+                    class="img-fluid"
+                    width="120px"
+                    src="../../images/crispy-mixed-fruit-chips (1).jpg"alt="img"/>
+                  <p class="mx-3 ">MANUFACTURER 1</p>
+                  <b class="mx-1">Crispy Mixed Fruit Chips</b> <br>
+                  <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                  <span class=" ms-3">$4.00</span>
+                </div>
+              </div>
+
+           </div>
+           </div>
+           </div>
+
+
+
+
+
+           <div class="container mt-2"> 
+            <div class="row">
+                <div class="d-flex">     
+                <div class="col-md-3 col-xs-12 ps-4 ">
+
+                <!-- btns -->
+
+                    <div class="best-sales-btns pt-2">
+                      <button class="border px-3 me-3 fw-normal fs-5">Best Sales</button>
+                      <button class="border fw-normal fs-5">New Arrivals</button>
+                  </div>
+                  <div class="best-sales-btns pt-2">
+                      <button class="border px-3 me-3 fw-normal fs-5">Hot Deals</button>
+                      <button class="border ms-1 fw-normal fs-5">Accessories</button>
+                  </div>  
+                    <div class="mt-4">
+                      <img width="90%" src="../../images/fresh-food-image.jpg" alt="image">
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                    <div class="card-2 py-3 border">
+                      <span class="new-product ms-2">New Product</span><br />
+                      <img
+                        class="img-fluid"
+                        width="120px"
+                        src="../../images/fresh-cauliflower.jpg"alt="img"/>
+                      <p class="mx-3 ">MANUFACTURER 2</p>
+                      <b class="mx-1">Fresh Cauliflower</b> <br>
+                      <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                      <span class=" ms-3">$9.00</span>
+                    </div>
+                  </div>
+    
+                  <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                    <div class="card-2 py-3 border">
+                      <span class="new-product ms-2">New Product</span><br />
+                      <img
+                        class="img-fluid"
+                        width="120px"
+                        src="../../images/kiwi-fruit-single (1).jpg"alt="img"/>
+                      <p class="mx-3 ">MANUFACTURER 4</p>
+                      <b class="mx-1">Kiwi Fruit Single</b> <br>
+                      <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                      <span class=" ms-3">$90. 00</span>
+                    </div>
+                  </div>
+    
+                  <div class="col-md-2 col-xs-12 fruit-card-1 me-5">
+                    <div class="card-2 py-3 border">
+                      <span class="new-product ms-2">New Product</span><br />
+                      <img
+                        class="img-fluid"
+                        width="120px"
+                        src="../../images/fresh-orange-nagpur.jpg"alt="img"/>
+                      <p class="mx-3 ">MANUFACTURER 2</p>
+                      <b class="mx-2">Fresh Orange Nagpur</b> <br>
+                      <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                      <span class=" ms-3">$35.00</span>
+                    </div>
+                  </div>
+    
+                  <div class="col-md-2 col-xs-12 fruit-card-1">
+                    <div class="card-2 py-3 border">
+                      <span class="new-product ms-2">New Product</span><br />
+                      <img
+                        class="img-fluid"
+                        width="120px"
+                        src="../../images/fruit-dried-mango-slices.jpg"alt="img"/>
+                      <p class="mx-3 ">MANUFACTURER 1</p>
+                      <b class="mx-1">Fruit Dried Mango Slices</b> <br>
+                      <img class="ms-3 mt-2 mb-2 img-fluid" src="../../images/stars.jpg" alt="img"><br>
+                      <span class=" ms-3">$4.00</span>
+                    </div>
+                  </div>
+    
+               </div>
+               </div>
+               </div>
+
+
+
+
+ <!-- Footer Section -->
+
+
+ <div class="footer mt-5 py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="footer-content">
+                  <div class="footer-first-part">
+                      <img class="img-fluid" src="../../images/logo-1638512648.jpg" alt="hero-logo" />
+                      <p class="mt-4 fw-normal fs-6">
+                          We specialize in delivery and supply of organic food products,
+                          produced by local farmers.
+                      </p>
+                      <div class="d-flex align-items-center mt-3">
+                          <div>
+                              <img class="img-fluid" src="../../images/contact_footer.png" alt="call-icon" />
+                          </div>
+                          <div class="contact-detail ms-2">
+                              <span class="span">NEED HELP?</span><br />
+                              <strong>(+800) 345 678, (+800) 123 456</strong>
+                          </div>
+                      </div>
+                      <div class="d-flex my-4">
+                          <iconify-icon width="30px" class="ms-4" icon="ri:facebook-fill" noobserver></iconify-icon>
+                          <iconify-icon width="30px" class="ms-4" icon="bi:twitter" noobserver></iconify-icon>
+                          <iconify-icon width="30px" class="ms-4" icon="bi:instagram" noobserver></iconify-icon>
+                          <iconify-icon width="30px" class="ms-4" icon="bi:youtube" noobserver></iconify-icon>
+                          <iconify-icon width="30px" class="ms-4" icon="mdi:whatsapp" noobserver></iconify-icon>
+                      </div>
+                      <div class="copy-right fw-medium">
+                          <p>Copyright © Posthemes. All Rights Reserved.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      
+          <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="information-section">
+                  <div class="d-flex justify-content-between">
+                      <div class="information">
+                          <span class="fw-medium">Information</span>
+                          <hr class="w-50" style="border-color: #4FB68D;" />
+                          <ul class="list-unstyled ul-items fw-normal">
+                              <li>Delivery</li>
+                              <li>About us</li>
+                              <li>Secure payment</li>
+                              <li>Contact us</li>
+                              <li>Sitemap</li>
+                              <li>Stores</li>
+                          </ul>
+                      </div>
+
+                      <div class="information-sec-two information mx-3">
+                          <span class="fw-medium">Custom Links</span>
+                          <hr class="w-50" style="border-color: #4FB68D;" />
+                          <ul class="list-unstyled fw-normal fs-6">
+                              <li>Legal Notice</li>
+                              <li>Prices drop</li>
+                              <li>New products</li>
+                              <li>Best sales</li>
+                              <li>My account</li>
+                              <li>Terms and conditions</li>
+                          </ul>
+                      </div>
+
+                      <div class="information-sec-three ">
+                          <span class="fw-medium">Newsletter</span>
+                          <hr class="w-50" style="border-color: #4FB68D;" />
+                          <p class="fw-light mt-3">Sign up for our e-mail to get latest news.</p>
+                          <form class="footer-input">
+                              <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address">
+                                  <button class="btn btn-light fw-medium">Subscribe</button>
+                              </div>
+                          </form>
+                          <div class="d-flex mt-3 d-none  ">
+                              <div class="google-btn">
+                                  <img src="./images/app_store.png" alt="btn">
+                              </div>
+                              <div class="google-btn mx-3">
+                                  <img src="./images/google_play.png" alt="btn">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="d-none">
+                      <img class="img-fluid w-50" src="./images/payment-logo.png" alt="logo">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>   
+
+
+</body>
+</html>
